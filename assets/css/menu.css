@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body a{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Menu1 */
+.menu1{
+    background-color:#f2f2f2;
+    padding:40px 0;
+}
+.menu1 .fa-bars{
+    margin-right:10px;
+    cursor:pointer;
+}
+.menu1 ul .menu-link{
+    transition:all 0.3s ease-in-out;
+    list-style-type: none;
+    font-size:16px;
+    font-weight: bold;
+    margin:12px 0;
+    position:relative;
+    top:-900px;
+    text-align: center;
+}
+.menu1 .menu-link.active_li{
+    transition:all 0.3s ease-in;
+    left:0;
+    top:0;
+    color: #2e2c4a;
+    font-size: 30px;
+}
+.menu1 .menu-link.active_li:hover{
+    transform: scale(1.1);
+    color:#44407a;
+}
+.gradient_bg{
+    transition:all 0.3s ease;
+    background-image:linear-gradient(to bottom, #ddd, blue)
+}
+
+.sidebar-nav{
+    transition: all 0.3s ease-in-out;
+    position:relative;
+    left:0;
+    top:-900px;
+}
+.sidebar-nav.active_nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgb(111 125 206 / 34%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-nav .exit{
+    position:fixed;
+    top:50px;
+    right:400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar-nav .exit .fa-times{
+    transition: all 0.6s ease;
+    display: none;
+}
+.sidebar-nav .exit .fa-times.active_btn{
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 100%;
+}
+
+.open_menu{
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open_menu h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-size:16px;
+    margin-bottom:0;
+}
+.open_menu h4,
+.open_menu i{
+    color:#0970E6;
+}
+
+@media screen and (max-width: 920px){
+    .sidebar-nav .exit{
+        position: relative;
+        right: -42%;
+        top: -5%;
+    }
+    .sidebar-nav.active_nav{
+        padding:30px;
+    }
+}
+/* Menu1 */

@@ -1,0 +1,20 @@
+.top-bar{
+    background-color:#F8F9FA;
+    height:42px;
+    display: flex;
+    align-items: center;
+}
+.top-ul{
+    margin-bottom:0 !important;
+}
+.top-ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin:0 12px 0 0;
+}
+.top-ul li a{
+    text-decoration:none;
+    color:#5A626B;
+    font-weight: normal;
+    font-size: 14px;
+}
